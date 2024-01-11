@@ -1,9 +1,13 @@
-import Image from 'next/image'
+import {allBlogs} from 'content/generated'
+import HomeCoverSection from './components/Home/HomeCoverSection'
 
 export default function Home() {
+
+  
   return (
     <main className="flex flex-col items-center justify-center">
-    hello
+   
+    <HomeCoverSection blogs={allBlogs}/>
     </main>
   )
 }

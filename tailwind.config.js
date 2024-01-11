@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
+    
         colors: {
           dark: "#1b1b1b",
           light: "#fff",
@@ -20,7 +20,7 @@ module.exports = {
           in: ["var(--font-in)"]
         },
       },
-    },
+   
   },
   plugins: [],
 }
