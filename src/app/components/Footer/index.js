@@ -1,8 +1,7 @@
 "use client"
-import React from "react";
-import { useForm } from "react-hook-form";
 
-export const Footer = () => {
+import { useForm } from "react-hook-form";
+const Footer = () => {
   const {
     register,
     handleSubmit,
@@ -19,7 +18,7 @@ export const Footer = () => {
         members community to stay up to date with latest news.
       </p>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form>
         <input
           type="email"
           placeholder="email"
@@ -31,3 +30,4 @@ export const Footer = () => {
     </Footer>
   );
 };
+export default Footer
