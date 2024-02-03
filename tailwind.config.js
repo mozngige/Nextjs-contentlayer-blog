@@ -19,6 +19,13 @@ module.exports = {
           mr: ["var(--font-mr)"],
           in: ["var(--font-in)"]
         },
+        animation:{
+          roll: "roll 24s linear infinite"
+        },
+        keyframes:{
+          "0%": {tranform: "translateX(100%)"},
+          "100%" : {transform: "translateX(-100%)"}
+        }
       },
    
   },

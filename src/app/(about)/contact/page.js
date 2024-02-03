@@ -1,6 +1,6 @@
-// import ContactForm from "@/src/components/Contact/ContactForm";
-import ContactForm from "../components/Contact/ContactForm";
-import LottieAnimation from "../components/Contact/LottieAnimation";
+
+ import ContactForm from "../../components/Contact/ContactForm";
+import LottieAnimation from "../../components/Contact/LottieAnimation";
 
 
 
