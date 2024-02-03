@@ -1,9 +1,7 @@
-import React from 'react'
-import { format } from 'date-fns'
-import Image from 'next/image'
-import Link from 'next/link'
-
-
+import { format } from "date-fns";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 const BlogLayoutThree = ({blog}) =>{
   return (
     <div className=' group flex flex-col items-center text-dark'>

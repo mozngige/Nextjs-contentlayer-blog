@@ -1,11 +1,9 @@
-import { allBlogs } from "@/.contentlayer/generated"
-import Tag from "../../components/Elements/Tag"
-import Image from "next/image"
-import BlogDetails from "../../components/Blog/BlogDetails"
-import RenderMdx from "../../components/Blog/RenderMdx"
-import {slug } from 'github-slugger'
-
-
+import BlogDetails from "@/src/app/components/Blog/BlogDetails";
+import RenderMdx from "@/src/app/components/Blog/RenderMdx";
+import Tag from "@/src/app/components/Elements/Tag";
+import { allBlogs } from "contentlayer/generated";
+import { slug } from "github-slugger";
+import Image from "next/image";
 
 
 export async function generateStaticParams() {

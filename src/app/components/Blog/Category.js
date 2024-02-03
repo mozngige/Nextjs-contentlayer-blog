@@ -1,7 +1,6 @@
-import { cx } from '../../utils'
-import React from 'react'
-import Link from 'next/link';
-
+import { cx } from "@/src/utils";
+import Link from "next/link";
+import React from "react";
 const Category = ({ link = "#", name, active, ...props }) => {
   return (
     <Link

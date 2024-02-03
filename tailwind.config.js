@@ -23,9 +23,11 @@ module.exports = {
           roll: "roll 24s linear infinite"
         },
         keyframes:{
+          roll:{
           "0%": {tranform: "translateX(100%)"},
           "100%" : {transform: "translateX(-100%)"}
-        }
+        }}
+        
       },
    
   },

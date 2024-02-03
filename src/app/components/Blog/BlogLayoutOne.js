@@ -1,8 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import Tag from '../Elements/Tag'
-import { slug } from 'github-slugger'
+import React from "react";
+import Tag from "../Elements/Tag";
+import Link from "next/link";
+import Image from "next/image";
+import { slug } from "github-slugger";
+
 function BlogLayoutOne({blog}) {
   return (
     <div className='group inline-block overflow-hidden rounded-xl'>

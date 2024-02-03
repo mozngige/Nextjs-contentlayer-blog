@@ -1,7 +1,7 @@
 
-import { cx } from '../../utils'
-import React from 'react'
-import Link from 'next/link';
+import { cx } from "@/src/app/utils";
+import Link from "next/link";
+import React from "react";
 
 
 

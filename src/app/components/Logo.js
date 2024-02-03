@@ -1,16 +1,16 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import profileimg from "@/public/profile-img.png"
-function Logo() {
+import Image from "next/image"
+import Link from "next/link"
+import profileImg from "@/public/profile-img.png"
+
+const Logo = () => {
   return (
-    <Link href="/">
-      <div className="w-16 rounded-full overflowhidden border border-solid  border-dark">
-        <Image src={profileimg} alt="moz" className="w-full h-auto rounded-full "/>
-      </div>
-      <span>moz</span>
+    <Link href="/" className="flex items-center text-dark dark:text-light">
+        <div className=" w-12  rounded-full overflow-hidden border border-solid border-dark dark:border-gray  mr-2 ">
+            <Image src={profileImg} alt="CodeBucks logo" className="w-full h-auto rounded-full" sizes="20vw" priority />
+        </div>
+        <span className="font-bold dark:font-semibold text-lg md:text-xl">CodeBucks</span>
     </Link>
-  );
+  )
 }
 
-export default Logo;
+export default Logo

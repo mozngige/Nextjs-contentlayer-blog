@@ -1,5 +1,5 @@
 import React from "react";
-import { sortBlogs } from '../../utils';
+import { sortBlogs } from '@/src/app/utils';
 import Image from "next/image";
 import Link from "next/link";
 import Tag from "../Elements/Tag";
@@ -7,7 +7,7 @@ import { slug } from "github-slugger";
 
 const HomeCoverSection = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
-  const blog = sortedBlogs[1];
+  const blog = sortedBlogs[0];
 
   return (
     <div className="w-full inline-block">

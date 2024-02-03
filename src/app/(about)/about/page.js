@@ -1,8 +1,6 @@
+import AboutCoverSection from "@/src/app/components/About/AboutCoverSection";
+import Skills from "@/src/app/components/About/Skills";
 import Link from "next/link";
-import AboutCoverSection from "../../components/About/AboutCoverSection";
-import Skills from "../../components/About/Skills";
-
-
 
 
 export default function About() {
