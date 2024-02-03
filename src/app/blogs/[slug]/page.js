@@ -4,6 +4,15 @@ import Image from "next/image"
 import BlogDetails from "../../components/Blog/BlogDetails"
 import RenderMdx from "../../components/Blog/RenderMdx"
 import {slug } from 'github-slugger'
+
+
+
+
+export async function generateStaticParams() {
+  return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
+}
+
+
  
 export default function BlogPage({params}) {
     const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug)
