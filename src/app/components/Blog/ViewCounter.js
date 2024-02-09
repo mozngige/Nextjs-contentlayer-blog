@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 const supabase = createClientComponentClient();
 
-const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
+const ViewCounter = ({ slug, noCount=false, showCount=true }) => {
   const [views, setViews] = useState(0);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
             console.error("Error incrementing view count inside try block:", error)
         };
 
-
+    
         setViews(data ? data.count : 0)
         
       } catch (error) {

@@ -3,6 +3,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
+import siteMetadata from "../../utils/siteMetaData";
 
 const Footer = () => {
   const {
@@ -41,16 +42,40 @@ const Footer = () => {
       </form>
 
       <div className="flex items-center mt-8">
-        <a href="http://" className="inline-block w-6 h-6 mr-4  ">
+        <a
+          href={siteMetadata.linkedin}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="http://" className="inline-block w-6 h-6 mr-4  ">
+        <a
+          href={siteMetadata.twitter}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via Twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="http://" className="inline-block w-6 h-6 mr-4 fill-light  ">
-          <GithubIcon className="hover:scale-125 transition-all ease duration-200" />
+        <a
+          href={siteMetadata.github}
+          className="inline-block w-6 h-6 mr-4 fill-light"
+          aria-label="Check my profile on Github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GithubIcon className="fill-light dark:fill-dark  hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="http://" className="inline-block w-6 h-6 mr-4  ">
+        <a
+          href={siteMetadata.dribbble}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Check my profile on Dribbble"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
       </div>
