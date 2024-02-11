@@ -27,16 +27,18 @@ module.exports = {
           roll:{
           "0%": {tranform: "translateX(100%)"},
           "100%" : {transform: "translateX(-100%)"}
-        }}
+        }},
+        screens:{
+        
+          sxl: "1180px",
+          xs: "480px"
+          
+        },
         
       },
-      screens:{
-        sxl: "1180px",
-        xs: "1180px"
-        
-      }
    
   },
+
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
