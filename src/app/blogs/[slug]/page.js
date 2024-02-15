@@ -119,6 +119,7 @@ export default function BlogPage({ params }) {
           className="aspect-square w-full h-full object-cover object-center"
           priority
           sizes="100vw"
+       
         />
       </div>
       <BlogDetails blog={blog} slug={params.slug} />

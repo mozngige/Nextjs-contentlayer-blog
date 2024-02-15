@@ -2,7 +2,10 @@
 
 const {withContentlayer} = require("next-contentlayer")
 const nextConfig = {
-    reactStrictMode: false
+    reactStrictMode: false,
+    compiler:{
+        removeCnsole: true
+    }
 }
 
 module.exports =  withContentlayer({...nextConfig})
